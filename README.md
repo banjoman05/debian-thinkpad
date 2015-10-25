@@ -18,3 +18,7 @@ tmpfs   /var/log        tmpfs   defaults,noatime,size=512M	0	0
 # fileserver samba mounts
 //IP/SHARE cifs credentials=[redacted location],iocharset=utf8,file_mode=0777,dir_mode=0777 0 0
 
+# Synergy
+# client
+vi /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+"greeter-setup-script=/usr/bin/synergyc --crypto-pass [redacted] [servername]"
