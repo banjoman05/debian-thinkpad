@@ -11,8 +11,11 @@ Signature=Super_L
 
 # Filesystem tweaks
 
+# NTFS as user
+/dev/sda1 /mnt  ntfs  defaults,auto,uid=1000,gid=1000,umask=002 0 0
+
 # Ramdisks
-tmpfs   /tmp    	tmpfs   defaults,noatime,size=2048M     0       0
+tmpfs   /tmp    	tmpfs   defaults,noatime,size=2048M 0 0
 tmpfs   /var/log        tmpfs   defaults,noatime,size=512M	0	0
 
 # fileserver samba mounts
